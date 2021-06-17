@@ -6,7 +6,8 @@
 {
     display: flex;
     margin: 5px;
-    background: blueviolet;
+    background: white;
+    color: black;
 }
 #undefinedlist{
     width: 57px;
@@ -29,4 +30,12 @@ li{
     background-repeat: no-repeat;
     width: 210vh;
     height: 100vh;
+}
+.three_parts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50vh;
+    top: 23vh;
 }

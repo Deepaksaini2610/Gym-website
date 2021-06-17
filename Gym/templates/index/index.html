@@ -1,40 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'main.html' %}
+{% block index %}
 
-    <link rel="stylesheet"  href="{%  static  'style.css'  %}">
-    <title>Home Page</title>
-
-<!--    <link rel="stylesheet" href="{% static 'css/style.css'%}">-->
-</head>
-<body>
-    <div class="maincontainer">
-    <div class="container">
-        <div class="logo">
-            <h1>PowerHUB</h1>
-        </div>
-        <div class="list">
-            <ul id="undefinedlist">
-                <a href="{url 'home'}"><li>Home </li></a>>
-                <a href="{url 'home'}"><li>Aboutus</li></a>>
-                <a href="{url 'home'}"><li>Blog</li></a>>
-                <a href="{url 'home'}"><li>Contactus</li></a>>
-            </ul>
-   <a>     </div>
-    </div>
-        {% block contact %}
-        {% endblock %}
-        {% for i in deepak %}
-        <div class="three_parts">
-            <h1>{{i.title}}</h1>
-            <p>{{i.description}}</p>
+<div class="three_parts">
+            <h1>{{deepak.title}}</h1>
+            <p>{{deepak.description}}</p>
             <button id="btn">Read More</button>
         </div>
-        {% endfor %}
-</div>
-</body>
-</html>
+{% endblock%}

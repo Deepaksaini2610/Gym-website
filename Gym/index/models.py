@@ -6,3 +6,4 @@ class about(models.Model):
     description = models.TextField(max_length=150 ,blank= False)
     def __str__(self):
         return self.title
+
